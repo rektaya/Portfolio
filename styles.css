@@ -1,79 +1,157 @@
 body {
-    font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.maxwidth-container {
+  margin: 0 auto;
+  max-width: 60rem;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 8em;
-    padding-right: 8em;
-    padding-top: 3em;
-    padding-bottom: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8em;
+  padding-right: 8em;
+  padding-top: 3em;
+  padding-bottom: 4em;
 }
 
 header li {
-    list-style-type: none;
-    margin-left: 3em;
+  list-style-type: none;
+  margin-left: 3em;
 }
 
 header ul {
-    display: flex;
+  display: flex;
 }
 
 .banner {
-    display: flex;
-    background-color: rgba(248, 235, 119, 0.15);
-    padding-left: 6em;
-    margin-left: 10em;
-    margin-right: 10em;
-    position: relative;
+  position: relative;
 }
 
-section div {
-    padding-left: 5em;
-    padding-right: 5em;
-    padding-top: 2em;
+.banner .maxwidth-container {
+  background-color: rgba(248, 235, 119, 0.15);
 }
+
+.banner .image {
+  flex-basis: 40%;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.banner .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
 
 h1 {
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 3em;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 3em;
 }
 
-section img {
-    height: calc(100% + 2em);
-    margin-top: -1em;
-}
 
 .main-text {
-    font-size: 16;
+  font-size: 16;
 }
 
 main section button {
-    position: absolute;
-    height: 3em;
-    padding: 1em;
-    right: -4rem;
-    bottom: -3rem;
-    background: #F8EB77;
-    border: none;
-    font-size: 24px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  position: absolute;
+  padding: 1em;
+  background: #F8EB77;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .projects h1 {
-    margin-left: 5.25em;
-    margin-top: 3em;
+  margin-left: 5.25em;
+  margin-top: 3em;
 }
 
 .easy-quizy {
-    background: #FFEBCE;
-    margin-right: 60em;
-    margin-top: 5em;
+  background: #FFEBCE;
+  margin-right: 60em;
+  margin-top: 5em;
 }
 
 .easy-quizy img {
-    width: 6em;
-    height: auto;
+  width: 6em;
+  height: auto;
 }
+
+
+
+/* MOBILE LAYOUT */
+@media (min-width: 0) and (max-width: 699px) {
+  .maxwidth-container {
+    padding: 1rem;
+  }
+
+  section {
+    margin: 1rem;
+  }
+
+  section > div {
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+  }
+
+  .banner .image img {
+    height: 16rem;
+    width: 100%;
+  }
+
+  main section button {
+    right: -1rem;
+    bottom: -2rem;
+    padding: 1em;
+    font-size: 18px;
+  }
+}
+
+
+/* DESKTOP */
+@media (min-width: 700px) {
+
+  .flex {
+    display: flex;
+  }
+
+  .maxwidth-container {
+    padding: 2rem;
+  }
+
+  section {
+    margin: 4rem;
+  }
+
+  section > div {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 2em;
+  }
+
+  .banner .image {
+    margin-right: 2rem;
+  }
+
+  .banner .image img {
+    height: calc(100% + 8rem);
+    margin-top: -4rem;
+  }
+
+  main section button {
+    right: -2rem;
+    bottom: -2rem;
+    padding: 1em;
+    font-size: 24px;
+  }
+
+}
+
+
