@@ -7,6 +7,16 @@ body {
   max-width: 60rem;
 }
 
+h1 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 48px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 23.34px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -18,8 +28,9 @@ header {
 }
 
 header li {
-  list-style-type: none;
-  margin-left: 3em;
+    list-style-type: none;
+    margin-left: 3em;
+    font-size: 20px;
 }
 
 header ul {
@@ -72,14 +83,29 @@ main section button {
 }
 
 .easy-quizy {
-  background: #FFEBCE;
-  margin-right: 60em;
-  margin-top: 5em;
+    display: flex;
+    max-width: 90rem;
+    margin-right: 20rem;
+
 }
 
-.easy-quizy img {
-  width: 6em;
-  height: auto;
+.easy-quizy div {
+    background: #FFEBCE;
+    display: flex;
+    justify-content: space-between;
+}
+
+.easy-quizy div img {
+    width: 6em;
+    height: auto;
+    padding: 0.8rem;
+}
+
+
+.easy-quizy aside {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border: solid #FF9900;
 }
 
 
@@ -146,7 +172,4 @@ main section button {
     padding: 1em;
     font-size: 24px;
   }
-
 }
-
-
