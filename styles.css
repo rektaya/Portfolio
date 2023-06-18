@@ -51,6 +51,10 @@ section {
   padding-bottom: 2rem;
 }
 
+.banner h1 {
+  margin: 0;
+}
+
 .banner .maxwidth-container {
   background-color: rgba(248, 235, 119, 0.15);
   padding: 0rem 6rem;
@@ -71,11 +75,13 @@ section {
 
 .banner .banner-text {
   padding-left: 8rem;
-  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-text {
-  font-size: 16;
+  font-size: 16px;
 }
 
 main section button {
@@ -91,7 +97,6 @@ main section button {
   right: 0;
   bottom: -2rem;
 }
-
 
 .projects h1 {
   position: relative;
@@ -123,7 +128,6 @@ main section button {
 }
 
 
-
 /* MOBILE LAYOUT */
 @media (min-width: 0) and (max-width: 699px) {
   .maxwidth-container {
@@ -132,6 +136,10 @@ main section button {
 
   section {
     margin: 1rem;
+  }
+
+  .banner .image {
+    flex-basis: unset;
   }
 
   .banner .image img {
