@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <img src="./logo/logo.svg"/>
+        <img id='logo' src="./logo/logo.svg"/>
         <nav>
             <ul>
                 <li>Design</li>
@@ -22,21 +22,20 @@
                 <li>Contact</li>
             </ul>
         </nav>
+        <img id='burger' src="./img/burger.svg"/>
     </header>
     <main>
         <section class="banner"> 
-            <div class='maxwidth-container flex'>
-                <div class='image'>
-                    <img src="./my_photos/photo.png"/>
+            <div class='maxwidth-container'>
+                <img src="./my_photos/photo.png"/>
+                <div class="banner-text">
+                    <h1>Hi, my name is Taya</h1>
+                    <p class="main-text"> I am a young but passionate designer and researcher with the background in psychology. I love people, technology, and everything that catches my eye. </p>
                 </div>
-            <div class="banner-text">
-                <h1>Hi, my name is Taya</h1>
-                <p class="main-text"> I am a young but passionate designer and researcher with the background in psychology. I love people, technology, and everything that catches my eye. </p>
-            </div>
                 <button>See my projects</button>
             </div>
         </section>
-        <section class="projects">
+        <!-- <section class="projects">
             <h1>My projects</h1>
             <article class="easy-quizy">
                 <div class='maxwidth-container flex'>
@@ -52,7 +51,7 @@
                     <p>Student project, where we were asked to create a Figma prototype. I came up with an idea of a quiz app, which is personalized and customizible for all learners.</p>
                 </aside>
             </article>
-        </section>
+        </section> -->
     </main>
 </body>
 </html>

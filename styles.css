@@ -1,25 +1,38 @@
+/* mobile */
+
 body {
   font-family: 'Roboto Mono', monospace;
 }
 
+button {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.25rem;
+}
+
 h1 {
   font-family: 'Roboto Flex', sans-serif;
-  font-size: 3em;
+  font-size: 1.5rem;
 }
 
 p {
-    font-size: 16px;
-    line-height: 23.34px;
+    font-size: 0.75rem;
+    line-height: 145.9%;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 8em;
-  padding-right: 8em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
+}
+
+header nav {
+  display: none;
+}
+
+header #logo {
+  width: 70px;
 }
 
 header li {
@@ -32,70 +45,53 @@ header ul {
   display: flex;
 }
 
-section {
-  margin: 4rem;
+header #burger {
+  width: 2rem;
 }
 
-.flex {
-  display: flex;
-}
 
 .maxwidth-container {
   margin: 0 auto;
   position: relative;
-  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner {
   position: relative;
   padding-bottom: 2rem;
+  margin: 0rem 3rem;
 }
 
-.banner h1 {
-  margin: 0;
-}
 
 .banner .maxwidth-container {
   background-color: rgba(248, 235, 119, 0.15);
-  padding: 0rem 6rem;
+  padding: 0 2rem 1rem 2rem;
 }
 
-.banner .image {
-  flex-basis: 35%;
-  flex-shrink: 0;
-  flex-grow: 0;
-}
 
-.banner .image img {
+.banner img {
   object-fit: cover;
   width: 100%;
-  height: calc(100% + 8rem);
-  margin-top: -4rem;
+  height: 200px;
+  margin-top: -1rem;
 }
 
 .banner .banner-text {
-  padding-left: 8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
-.main-text {
-  font-size: 16px;
-}
-
-main section button {
-  padding: 1em;
-  background: #F8EB77;
-  border: none;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  font-size: 24px;
+.banner h1 {
+  margin-bottom: 1.5rem;
 }
 
 .banner button {
-  position: absolute;
-  right: 0;
-  bottom: -2rem;
+  padding: 1.25rem 2rem;
+  background: #F8EB77;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 0.875rem;
 }
 
 .projects h1 {
@@ -127,32 +123,60 @@ main section button {
     border: solid #FF9900;
 }
 
+/* desktop */
 
-/* MOBILE LAYOUT */
-@media (min-width: 0) and (max-width: 699px) {
-  .maxwidth-container {
-    padding: 1rem;
+@media (min-width: 640px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+      font-size: 1rem;
+      line-height: 145.9%;
+  }
+  header #logo {
+    width: auto;
   }
 
-  section {
-    margin: 1rem;
+  header {
+    padding: 2rem 8rem;
+    margin-bottom: 8rem;
   }
 
-  .banner .image {
-    flex-basis: unset;
+  header nav {
+    display: block;
   }
 
-  .banner .image img {
-    height: 16rem;
-    width: 100%;
-    margin-top: -2em;
+  header #burger {
+    display: none;
   }
 
-  main section button {
-    right: -1rem;
+  .banner .maxwidth-container {
+    flex-direction: row;
+    padding-left: 7rem;
+    max-width: 72rem;
+
+  }
+
+  .banner .banner-text {
+    padding: 6rem 4rem 8rem 7rem;
+    width: 65%;
+    margin-left: auto;
+  }
+
+  .banner img {
+    position: absolute;
+    width: 30% ;
+    margin-top: -4rem;
+    height: calc(100% + 8rem);
+
+  }
+
+  .banner button {
+    position: absolute;
     bottom: -2rem;
-    padding: 1em;
-    font-size: 18px;
+    right: 3rem;
+    padding: 2rem 4rem;
+    font-size: 1.25rem;
   }
 }
-
