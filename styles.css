@@ -14,6 +14,10 @@ h1 {
   font-size: 1.5rem;
 }
 
+h3 {
+  font-size: .75rem;
+}
+
 p {
     font-size: 0.75rem;
     line-height: 145.9%;
@@ -49,26 +53,28 @@ header #burger {
   width: 2rem;
 }
 
+section {
+  position: relative;
+  padding-bottom: 2rem;
+  margin: 0rem 3rem;
+}
 
-.maxwidth-container {
+section h1 {
+  margin-bottom: 1.5rem;
+}
+
+.banner-container {
   margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.banner {
-  position: relative;
-  padding-bottom: 2rem;
-  margin: 0rem 3rem;
-}
 
-
-.banner .maxwidth-container {
+.banner .banner-container {
   background-color: rgba(248, 235, 119, 0.15);
   padding: 0 2rem 1rem 2rem;
 }
-
 
 .banner img {
   object-fit: cover;
@@ -98,29 +104,82 @@ header #burger {
   position: relative;
 }
 
-.easy-quizy {
+.project-container {
     display: flex;
-    max-width: 90rem;
-    margin-right: 20rem;
+    flex-direction: column;
+    margin-bottom: 4rem;
 }
 
-.easy-quizy div {
-    background: #FFEBCE;
+.project-container.reverse {
+  flex-direction: column-reverse;
+}
+
+.project-container .image-container {
     display: flex;
+    background: #eee;
     justify-content: space-between;
 }
 
-.easy-quizy div img {
-    width: 6em;
+.project-container img {
     height: auto;
-    padding: 0.8rem;
+    padding: 1rem;
+    flex: 0 0 32%;
+    min-width: 0;
 }
 
+.project-container aside {
+  padding: 2rem;
+  border: 1px solid #ccc;
+}
 
-.easy-quizy aside {
-    padding-left: 5rem;
-    padding-right: 5rem;
-    border: solid #FF9900;
+.project-container h3 {
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.43);
+}
+
+.project-container h2  {
+  margin-bottom: .5rem;
+}
+
+.project-container.orange .image-container {
+  background: #FFEBCE;
+}
+
+.project-container.orange aside {
+  border: 1px solid #FF9900;
+}
+
+.project-container.purple .image-container {
+  background: #EEE0FF;
+}
+
+.project-container.purple aside {
+  border: 1px solid #7000FF;
+}
+
+.project-container.blue .image-container {
+  background: #E0EEFF;
+}
+
+.project-container.blue aside {
+  border: 1px solid #0085FF;
+}
+
+.project-container.green .image-container {
+  background: #DDFFD8;
+} 
+
+.project-container.green aside {
+  border: 1px solid #24FF00;
+}
+
+.project-container.cyan .image-container {
+  background: #D8F6FF;
+}
+
+.project-container.cyan aside {
+  border: 1px solid #00C2FF;
+
 }
 
 /* desktop */
@@ -129,11 +188,21 @@ header #burger {
   h1 {
     font-size: 3rem;
   }
+
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 3.25rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
   
   p {
       font-size: 1rem;
       line-height: 145.9%;
   }
+
   header #logo {
     width: auto;
   }
@@ -151,10 +220,14 @@ header #burger {
     display: none;
   }
 
+  .banner {
+    margin-bottom: 6rem;
+  }
+
   .banner .maxwidth-container {
     flex-direction: row;
     padding-left: 7rem;
-    max-width: 72rem;
+    max-width: 64rem;
 
   }
 
@@ -165,6 +238,7 @@ header #burger {
   }
 
   .banner img {
+    object-fit: cover;
     position: absolute;
     width: 30% ;
     margin-top: -4rem;
@@ -178,5 +252,45 @@ header #burger {
     right: 3rem;
     padding: 2rem 4rem;
     font-size: 1.25rem;
+  }
+
+  .project-container {
+    flex-direction: row;
+    max-width: 64rem;
+  }
+
+  .project-container.reverse {
+    flex-direction: row;
+  }
+
+  .project-container.right {
+    margin-left: auto;
+  }
+
+  .project-container.center {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+  }
+
+  .project-container .image-container {
+    min-width: 0;
+    padding: 4rem 5rem;
+  }
+
+  .project-container aside {
+    padding: 2.5rem 4rem;
+  }
+
+  .project-container img {
+    padding: .25rem;
+  }
+
+  .project-container h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  .project-container h2 {
+    margin-bottom: 2.5rem;
   }
 }
