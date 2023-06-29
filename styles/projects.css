@@ -1,0 +1,99 @@
+/* PROJECTS */
+section.projects {
+    padding-bottom: 0rem;
+  }
+  
+  .projects h1 {
+    position: relative;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+  
+  .project-container.reverse {
+    flex-direction: column-reverse;
+  }
+  
+  .project-container .image-container {
+    display: flex;
+    background: #eee;
+    padding: 0 1rem;
+  }
+  
+  .project-container img {
+    height: auto;
+    padding: 1rem;
+    flex: 0 0 32%;
+    min-width: 0;
+  }
+  
+  .project-container aside {
+    padding: 2rem;
+    border: 1px solid #ccc;
+  }
+  
+  .project-container h3 {
+    font-size: 0.625rem;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.43);
+  }
+  
+  .project-container h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .project-container p {
+    font-size: 0.625rem;
+  }
+  
+  .project-container.orange .image-container {
+    background: #ffebce;
+  }
+  
+  .project-container.orange aside {
+    border: 1px solid #ff9900;
+  }
+  
+  .project-container.purple .image-container {
+    background: #eee0ff;
+  }
+  
+  .project-container.purple aside {
+    border: 1px solid #7000ff;
+  }
+  
+  .project-container.pink .image-container {
+    background: #ffecff;
+  }
+  
+  .project-container.pink aside {
+    border: 1px solid #fa00ff;
+  }
+  
+  .project-container.blue .image-container {
+    background: #e0eeff;
+  }
+  
+  .project-container.blue aside {
+    border: 1px solid #0085ff;
+  }
+  
+  .project-container.green .image-container {
+    background: #ddffd8;
+  }
+  
+  .project-container.green aside {
+    border: 1px solid #24ff00;
+  }
+  
+  .project-container.cyan .image-container {
+    background: #d8f6ff;
+  }
+  
+  .project-container.cyan aside {
+    border: 1px solid #00c2ff;
+  }
+  

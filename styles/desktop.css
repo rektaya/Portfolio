@@ -1,0 +1,304 @@
+/* DESKTOP & MOBILE */
+
+
+
+/* DESKTOP */
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 0.105rem;
+    line-height: normal;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 3.25rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 145.9%;
+  }
+
+  header #logo {
+    width: auto;
+  }
+
+  header {
+    padding: 2rem 8rem;
+    margin-bottom: 6rem;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  #about-me #me-nav, #design #design-nav {
+    font-weight: 700;
+  }
+
+  header #burger {
+    display: none;
+  }
+
+  section.banner {
+    margin: 0rem 8rem;
+  }
+
+  .banner {
+    margin-bottom: 0rem;
+  }
+
+
+  .banner-container.right {
+    margin-bottom: 10rem;
+  }
+
+  .banner-container.right img {
+    right: 4rem;
+    width: 30%;
+    height: calc(100% + 6rem);
+    top: 1rem;
+  }
+
+  #design .banner-container.right {
+    padding: 0;
+  }
+
+  #design .banner-container.right img {
+    width: 50%;
+    height: 100%;
+    right: -4rem;
+  }
+
+  .banner-container.right .banner-text {
+    margin-left: 0;
+  }
+
+  .banner .maxwidth-container {
+    flex-direction: row;
+    padding-left: 7rem;
+    max-width: 64rem;
+  }
+
+  .banner .banner-text {
+    padding: 6rem 4rem 8rem 7rem;
+    width: 65%;
+    margin-left: auto;
+  }
+
+  #design .banner .banner-text {
+    padding: 6rem 13rem 8rem 5rem;
+    width: 65%;
+  }
+
+
+  .banner img {
+    object-fit: cover;
+    position: absolute;
+    width: 23%;
+    margin-top: -4rem;
+    height: calc(100% + 6rem);
+    margin-left: 6rem;
+  }
+
+  .banner button {
+    position: absolute;
+    bottom: -2rem;
+    right: 3rem;
+    padding: 2rem 4rem;
+    font-size: 1.25rem;
+  }
+
+  .projects {
+    margin: 0;
+  }
+  .projects h1 {
+    margin: 8rem 8rem 4rem 16rem;
+  }
+
+  .project-container {
+    flex-direction: row;
+    max-width: 64rem;
+    font-size: 0.875rem;
+  }
+
+  .project-container h3 {
+    font-size: 0.875rem;
+  }
+
+  .project-container.reverse {
+    flex-direction: row;
+  }
+
+  .project-container.right {
+    margin-left: auto;
+  }
+
+  .project-container.center {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+  }
+
+  .project-container .image-container {
+    min-width: 0;
+    padding: 4rem 5rem;
+  }
+
+  .project-container aside {
+    padding: 2.5rem 4rem;
+  }
+
+  .project-container img {
+    padding: 0.25rem;
+  }
+
+  .project-container h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  .project-container h2 {
+    margin-bottom: 2.5rem;
+  }
+
+  .project-container p {
+    font-size: 0.875rem;
+  }
+
+  /* CONTACT */
+  .contact {
+    flex-direction: row;
+    align-items: flex-end;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  .contact .contact-block {
+    background-color: rgba(248, 235, 119, 0.15);
+    border: 2px solid rgb(248, 235, 119);
+    padding: 3rem 4rem 3rem 4rem;
+  }
+
+  .contact h2 {
+    text-align: left;
+    font-family: Roboto Flex;
+    line-height: 145.9%;
+    letter-spacing: 0.105rem;
+    padding-left: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+  }
+
+  .contact .contact-image {
+    width: 30%;
+  }
+
+  .contact form,
+  .contact .name,
+  .contact .last-name,
+  .contact .email {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  .contact form {
+    padding: 0;
+  }
+
+  .contact .full-name {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact .name {
+    margin-right: 3rem;
+    width: 50%;
+  }
+
+  .contact .last-name {
+    width: 50%;
+  }
+
+  .contact .email {
+    width: calc(50% - 1.5rem)
+  }
+
+  .contact form textarea {
+    margin-bottom: 2rem;
+    font-size: 0.825rem;
+  }
+
+  .contact label {
+    font-size: 0.825rem;
+  }
+
+  .contact button {
+    padding: 1.25rem 2rem;
+    background: #f8eb77;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-size: 0.875rem;
+  }
+
+  .story {
+    margin: 0;
+  }
+
+  .timeline {
+    flex-direction: row;
+    max-width: 80rem;
+    margin-bottom: 10rem;
+  }
+
+  .timeline .timeline-text {
+    order: initial;
+    padding: 3rem 4rem 4rem 5rem;
+  }
+
+  .timeline .timeline-text p {
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline .timeline-text h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 145.9%;
+  }
+
+  .timeline .timeline-text h3 {
+    color: rgba(0, 0, 0, 0.43);
+    margin-bottom: 3rem;
+  }
+
+  .timeline img {
+    height: auto;
+    width: 35%;
+  }
+
+  .timeline.right {
+    margin-left: auto;
+  }
+
+  .timeframe {
+    padding: 0;
+  }
+
+  .timeline.right .timeframe span {
+    text-wrap: nowrap;
+    font-size: 2rem;
+    transform: rotateZ(270deg);
+  }
+
+  .timeline.left .timeframe span {
+    text-wrap: nowrap;
+    font-size: 2rem;
+    transform: rotateZ(90deg);
+  }
+}

@@ -1,0 +1,48 @@
+
+/* GENERAL */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    line-height: normal;
+  }
+  
+  button {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.25rem;
+  }
+  
+  h1 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: .75rem;
+  }
+  
+  p {
+      font-size: 0.75rem;
+      line-height: 145.9%;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  section {
+    position: relative;
+    padding-bottom: 2rem;
+    margin: 0rem 3rem;
+  }
+  
+  section h1 {
+    margin-bottom: 1.5rem;
+  }

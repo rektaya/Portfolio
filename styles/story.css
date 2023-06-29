@@ -1,0 +1,67 @@
+
+/* IT'S ME */
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  
+  .timeline .timeframe {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .timeline.blue .timeframe {
+    background: #d8f6ff;
+  }
+  
+  .timeline.green .timeframe {
+    background: #ddffd8;
+  }
+  
+  .timeline.orange .timeframe {
+    background: #ffebce;
+  }
+  
+  .timeline .timeline-text {
+    padding: 1rem 1.5rem;
+    order: 3;
+  }
+  
+  .timeline .timeline-text h3 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .timeline .timeline-text p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .timeline.blue .timeline-text {
+    border: 1px solid #00c2ff;
+  }
+  
+  .timeline.green .timeline-text {
+    border: 1px solid #24ff00;
+  }
+  
+  .timeline.orange .timeline-text {
+    border: 1px solid #ff9900;
+  }
+  
+  .timeline .timeline-text h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .timeline .timeline-text h3 {
+    color: rgba(0, 0, 0, 0.43);
+  }
+  
+  .timeline img {
+    height: 250px;
+    object-fit: cover;
+    order: 2;
+  }

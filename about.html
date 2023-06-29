@@ -4,29 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/banner.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/story.css">
+    <link rel="stylesheet" href="./styles/desktop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <title>Taya's Portfolio - It's me</title>
 </head>
-<body>
+<body id="about-me">
     <header>
-        <img id='logo' src="./logo/logo.svg"/>
+        <a href="/">
+            <img id='logo' src="./logo/logo.svg"/>
+        </a>
         <nav>
             <ul>
-                <li>Design</li>
-                <li>Research</li>
-                <li>It's me</li>
-                <li>Contact</li>
+                <li id="design-nav">
+                    <a href="design.html">Design</a>
+                </li>
+                <li id="research-nav">
+                    <a href="research.html">Research</a>
+                </li>
+                <li id="me-nav">
+                    <a href="about.html">It's me</a>
+                </li>
+                <li id="contact-nav">
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
         </nav>
         <img id='burger' src="./img/burger.svg"/>
     </header>
-
     <main>
-        <section class="banner"> 
+        <section class="banner about"> 
             <div class='banner-container right'>
                 <div class="banner-text">
                     <h1>My name is Taya Rekhova</h1>
@@ -83,15 +98,28 @@
                 <img src="./img/2022-2024.png" alt="">
             </div>
         </section>
-        <section class="contact">
-            <img class="contact-image" src="./my_photos/photo.png" alt="">
-            <div class="contacts-container">
-                <h2>Feel free to contact me</h2>
-                <div class="logos">
-                    <img src="./img/burger.svg" alt="">
-                    <img src="./img/burger.svg" alt="">
-                    <img src="./img/burger.svg" alt="">
-                </div>
+        <section id="contact" class="contact">
+            <img class="contact-image" src="./img/memoji.png" alt="">
+            <div class="contact-block">
+                <h2>Feel free to contact me!</h2>
+                <form>
+                    <div class="full-name">
+                        <div class="name">
+                            <label for="Name">Name</label>
+                            <input id="Name" type="text" placeholder="Enter your name"/>
+                        </div>
+                        <div class="last-name">
+                            <label for="Last name">Last name</label>
+                            <input id="Last name" type="text" placeholder="Enter your last name"/> 
+                        </div>
+                    </div>
+                    <div class="email">
+                        <label for="Email">Email</label>
+                        <input id="Email" type="email" placeholder="Enter your email" /> 
+                    </div>
+                    <textarea id="messsage" rows="6" placeholder="Write your message"></textarea>
+                    <button>Send</button>
+                </form>
             </div>
         </section>
     </main>

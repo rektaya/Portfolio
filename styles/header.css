@@ -1,0 +1,30 @@
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  header nav {
+    display: none;
+  }
+  
+  header #logo {
+    width: 70px;
+  }
+  
+  header li {
+      list-style-type: none;
+      margin-left: 3em;
+      font-size: 20px;
+  }
+  
+  header ul {
+    display: flex;
+  }
+  
+  header #burger {
+    width: 2rem;
+  }
