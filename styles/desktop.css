@@ -38,7 +38,7 @@
     display: block;
   }
 
-  #about-me #me-nav, #design #design-nav {
+  #about-me #me-nav, #design #design-nav, #research #research-nav {
     font-weight: 700;
   }
 
@@ -66,11 +66,11 @@
     top: 1rem;
   }
 
-  #design .banner-container.right {
+  #design .banner-container.right, #research .banner-container.right {
     padding: 0;
   }
 
-  #design .banner-container.right img {
+  #design .banner-container.right img, #research .banner-container.right img {
     width: 50%;
     height: 100%;
     right: -4rem;
@@ -92,7 +92,7 @@
     margin-left: auto;
   }
 
-  #design .banner .banner-text {
+  #design .banner .banner-text, #research .banner .banner-text {
     padding: 6rem 13rem 8rem 5rem;
     width: 65%;
   }
