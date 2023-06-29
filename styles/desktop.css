@@ -280,6 +280,7 @@
   .timeline img {
     height: auto;
     width: 35%;
+    order: 0;
   }
 
   .timeline.right {
