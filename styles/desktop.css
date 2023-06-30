@@ -25,6 +25,11 @@
     line-height: 145.9%;
   }
 
+  button {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.25rem;
+  }
+
   header #logo {
     width: auto;
   }
@@ -42,7 +47,7 @@
     font-weight: 700;
   }
 
-  header #burger {
+  header #burger, header .side-menu {
     display: none;
   }
 
@@ -148,7 +153,8 @@
 
   .project-container .image-container {
     min-width: 0;
-    padding: 4rem 5rem;
+    padding: 2rem 3rem;
+    max-width: 50%;
   }
 
   .project-container aside {
@@ -169,6 +175,11 @@
 
   .project-container p {
     font-size: 0.875rem;
+  }
+
+  .project-container aside a {
+    font-size: 1.2rem;
+    margin-right: 1rem;
   }
 
   /* CONTACT */
