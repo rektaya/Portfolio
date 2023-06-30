@@ -112,12 +112,17 @@
     margin-left: 6rem;
   }
 
-  .banner button {
+  .banner a {
     position: absolute;
     bottom: -2rem;
     right: 3rem;
     padding: 2rem 4rem;
     font-size: 1.25rem;
+  }
+
+  .banner a:hover {
+    transform: translateY(-5px);
+    background: #d9cd62;
   }
 
   .projects {
@@ -292,6 +297,12 @@
     height: auto;
     width: 35%;
     order: 0;
+    transition: all .2s ease;
+    filter: brightness(0.75)
+  }
+
+  .timeline:hover img {
+    filter: brightness(1)
   }
 
   .timeline.right {

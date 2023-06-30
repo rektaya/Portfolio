@@ -20,6 +20,12 @@ header {
       list-style-type: none;
       margin-left: 3em;
       font-size: 20px;
+      transition: all .5s ease;
+  }
+
+  header li:hover {
+    /* background-color: yellow; */
+    text-decoration: underline;
   }
   
   header ul {
